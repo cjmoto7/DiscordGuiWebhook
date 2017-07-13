@@ -6,4 +6,5 @@ import os
 import json
 import requests
 
-easygui.msgbox(msg="(Your message goes here)", title="", ok_button="OK")
+something = easygui.enterbox("Enter Something")
+easygui.msgbox(msg=something)
