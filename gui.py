@@ -8,7 +8,10 @@ root.wm_title("Discord Roflz Webhook Poster")
 
 class ButtonCommands:
 
-    
+    def webhookPost():
+        webhook = webhook.Webhook(https://discordapp.com/api/webhooks/430687214549204993/KeRt_krZwouxhHNDrbkbg64HXgZdUM2XQlqL3Ny5SFusM-I-U79wbGaqqxy4UdF_kSB3, a.mbox_text, a.username_text, a.imgurl_text)
+        
+
 
 class EntryForm:
 
@@ -39,7 +42,7 @@ class EntryForm:
 
         self.mbox = Text(frameBot, maxundo=10, height=10, width=50, wrap=WORD)
         self.mbox.pack(side=LEFT)
-        self.mbox_text = self.mbox.get(END)
+        self.mbox_text = self.mbox.get(ANCHOR)
 
         self.label3 = Label(frameLabe, text="Message:")
         self.label3.pack(side=LEFT)
