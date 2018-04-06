@@ -15,7 +15,7 @@ class Webhook():
         self.url = url if "/slack" in url else url + "/slack"
         self.content = content
         self.username = username
-        self.icon_url = icon_url
+        self.icon_url = icon_url if "/slack" in url else url + "/slack"
         self.formated = ""
         self.attachments = []
 
