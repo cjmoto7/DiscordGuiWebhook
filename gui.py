@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 from tkinter import *
+import idlelib.tooltip as tooltip
 import webhook
 
 root = Tk()
 
 root.wm_title("Discord Roflz Webhook Poster")
-
-class EventHandlers:
-
-    
 
 
 class ButtonCommands:
@@ -32,17 +29,21 @@ class EntryForm:
 
         self.label1 = Label(frameTop, text="User Name:")
         self.label1.pack(side=LEFT)
+        self.ttip_label1 = tooltip.ToolTip(self.label1, "This field may be left blank")
 
         self.username_text = StringVar()
         self.entry1 = Entry(frameTop, textvariable=self.username_text)
         self.entry1.pack(side=LEFT, padx=2)
+        self.ttip_entry1 = tooltip.ToolTip(self.entry1, "This field may be left blank")
 
         self.label2 = Label(frameTop, text="Image Url:")
         self.label2.pack(side=LEFT)
+        self.ttip_label2 = tooltip.ToolTip(self.label2, "This field may be left blank")
 
         self.imgurl_text = StringVar()
         self.entry2 = Entry(frameTop, textvariable=self.imgurl_text)
         self.entry2.pack(side=LEFT, padx=2)
+        self.ttip_entry2 = tooltip.ToolTip(self.entry2, "This field may be left blank")
 
         self.mbox = Text(frameBot, maxundo=10, height=10, width=50, wrap=WORD)
         self.mbox.pack(side=LEFT)
